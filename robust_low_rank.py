@@ -17,7 +17,7 @@ def compute_robust_low_rank(data, total_k, range_kprime, d):
         print("processing k=", k)
         eigs, eigvecs = lasp.eigsh(data, k=k, which='LA', tol=0.00001)
         Pi = np.matmul(eigvecs, eigvecs.T)
-        projected_data = np.matmul(Pi, np.matmul(newdataM, Pi))
+        projected_data = np.matmul(Pi, np.matmul(data, Pi))
 
         if k < total_k:
           spca = SparsePCA(n_components=total_k-k, random_state=0, alpha=1e-5, normalize_components=True)
