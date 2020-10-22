@@ -8,3 +8,18 @@ This repository contains the following files:
 	 
 This file is used to certify the robustness of a given subspace.
 
+
+2. robust_low_rank.py: Takes in a data matrix and computes a robust low dimensional subspace that approximates the data. In order to do this the algorithm uses a combination of the PCA and sparse PCA subroutines.
+
+
+Dependencies:
+
+Python
+scipy
+sklearn
+
+
+The code for robust training and evaluation of neural networks is coming soon.
+
+
+
