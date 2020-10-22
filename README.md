@@ -15,7 +15,9 @@ This file is used to certify the robustness of a given subspace.
 Dependencies:
 
 Python
+
 scipy
+
 sklearn
 
 
